@@ -1616,7 +1616,7 @@ LIBLTE_ERROR_ENUM liblte_phy_find_sss(LIBLTE_PHY_STRUCT *phy_struct,
             abs_corr = sqrt(corr_re*corr_re + corr_im*corr_im);
             if(abs_corr > sss_thresh)
             {
-                while(symb_starts[5] < (((2048 + N_CP_L_ELSE)*4 + 2048 + N_CP_L_0) - 15360*10))
+                while(symb_starts[5] < (((2048 + N_CP_L_ELSE)*4 + 2048 + N_CP_L_0) + 15360*10))
                 {
                     symb_starts[5] += 307200;
                 }
